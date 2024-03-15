@@ -55,4 +55,12 @@ class HomeViewModel: ObservableObject{
             return nil
         }
     }
+    
+    func createCharData()->[TempCharData]?{
+        if let selfData = self.dailyWeatherData{
+            let tempData = selfData.list.map{TempCharData(date: String($0.dt), temp: Int($0.main.temp))}
+            return tempData
+        }
+        return nil
+    }
 }

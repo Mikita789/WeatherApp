@@ -22,6 +22,8 @@
 		38CE2EE32BA338F700F9BCD5 /* UserErrorsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE2EE22BA338F700F9BCD5 /* UserErrorsEnum.swift */; };
 		38CE2EE52BA3390200F9BCD5 /* URLConstatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE2EE42BA3390200F9BCD5 /* URLConstatnts.swift */; };
 		38CE2EE72BA4338200F9BCD5 /* DailyWeatherScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE2EE62BA4338200F9BCD5 /* DailyWeatherScroll.swift */; };
+		38CE2EE92BA4484900F9BCD5 /* CharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE2EE82BA4484900F9BCD5 /* CharView.swift */; };
+		38CE2EEB2BA464BA00F9BCD5 /* TempCharData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE2EEA2BA464BA00F9BCD5 /* TempCharData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		38CE2EE22BA338F700F9BCD5 /* UserErrorsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserErrorsEnum.swift; sourceTree = "<group>"; };
 		38CE2EE42BA3390200F9BCD5 /* URLConstatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstatnts.swift; sourceTree = "<group>"; };
 		38CE2EE62BA4338200F9BCD5 /* DailyWeatherScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherScroll.swift; sourceTree = "<group>"; };
+		38CE2EE82BA4484900F9BCD5 /* CharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharView.swift; sourceTree = "<group>"; };
+		38CE2EEA2BA464BA00F9BCD5 /* TempCharData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCharData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				38CE2EDB2BA302A800F9BCD5 /* SearchBar.swift */,
 				38CE2EDD2BA321B200F9BCD5 /* SunView.swift */,
 				38CE2EE62BA4338200F9BCD5 /* DailyWeatherScroll.swift */,
+				38CE2EE82BA4484900F9BCD5 /* CharView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			children = (
 				38CE2ECF2BA1D5AA00F9BCD5 /* WeatherNetwModel.swift */,
 				38CE2ED52BA2E79100F9BCD5 /* CurrentWeatherNetwModel.swift */,
+				38CE2EEA2BA464BA00F9BCD5 /* TempCharData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,11 +213,13 @@
 				38CE2EE32BA338F700F9BCD5 /* UserErrorsEnum.swift in Sources */,
 				38CE2ED02BA1D5AA00F9BCD5 /* WeatherNetwModel.swift in Sources */,
 				38CE2ED42BA2E70800F9BCD5 /* HomeViewModel.swift in Sources */,
+				38CE2EEB2BA464BA00F9BCD5 /* TempCharData.swift in Sources */,
 				38CE2EE02BA32B0300F9BCD5 /* LocationManager.swift in Sources */,
 				38CE2ED62BA2E79100F9BCD5 /* CurrentWeatherNetwModel.swift in Sources */,
 				38CE2EDC2BA302A800F9BCD5 /* SearchBar.swift in Sources */,
 				38CE2ECE2BA1C2AF00F9BCD5 /* NetwManager.swift in Sources */,
 				38CE2EC22BA1C27200F9BCD5 /* ContentView.swift in Sources */,
+				38CE2EE92BA4484900F9BCD5 /* CharView.swift in Sources */,
 				38CE2ED22BA2DC0600F9BCD5 /* CurrentTempCard.swift in Sources */,
 				38CE2EDE2BA321B200F9BCD5 /* SunView.swift in Sources */,
 				38CE2EE52BA3390200F9BCD5 /* URLConstatnts.swift in Sources */,

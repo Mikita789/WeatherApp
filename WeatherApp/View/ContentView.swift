@@ -13,6 +13,8 @@ struct ContentView: View {
     @ObservedObject var model = HomeViewModel()
     @State private var cityText = ""
     
+    @State private var isShowTempChart = false
+    
     var body: some View {
         VStack (alignment: .leading){
             if let currentData = model.dailyWeatherData{
@@ -37,12 +39,26 @@ struct ContentView: View {
                     if let urlStr = currentWeather.weather.first?.urlImage {
                         AsyncImage(url: URL(string: urlStr))
                     }
-                    CurrentTempCard(currentWeather: currentWeather)
+                    HStack(alignment: .top) {
+                        CurrentTempCard(currentWeather: currentWeather)
+                        Button(action: {
+                            self.isShowTempChart.toggle()
+                        }, label: {
+                            Image(systemName: "chart.xyaxis.line")
+                        }).padding(.top)
+                        Spacer()
+                    }
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false){
                     DailyWeatherScroll(weatherData: currentData)
                 }.frame(maxWidth: .infinity, maxHeight: 100)
+            }
+        }
+        .sheet(isPresented: $isShowTempChart){
+            if let data = model.createCharData(){
+                CharView(data: data)
+                    .presentationDetents([.height(500), .medium])
             }
         }
         .foregroundStyle(.white)

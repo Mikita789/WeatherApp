@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SearchBar: View {
     @Binding var text: String
-    @State private var isShowTF:Bool = false
+    @State private var isShowTF:Bool = false{
+        didSet{
+            text = ""
+        }
+    }
     var body: some View {
         HStack {
             Image(systemName: "magnifyingglass.circle")
